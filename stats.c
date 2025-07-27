@@ -43,7 +43,7 @@ void main() {
 
 }
 
-unsigned int find_maximum(int *array, int length)
+unsigned int find_maximum(unsigned char *array, int length)
 {
     unsigned int max = array[0];
     for (int i = 1; i < length; i++) {
@@ -54,7 +54,7 @@ unsigned int find_maximum(int *array, int length)
     return max;
 }
 
-unsigned int find_minimum(int *array, int length)
+unsigned int find_minimum(unsigned char *array, int length)
 {
     unsigned int min = array[0];
     for (int i = 1; i < length; i++) {
@@ -65,7 +65,7 @@ unsigned int find_minimum(int *array, int length)
     return min;
 }
 
-unsigned int find_mean(int *array, int length)
+unsigned int find_mean(unsigned char *array, int length)
 {
     unsigned int sum = 0;
     for (int i = 0; i < length; i++) {
@@ -73,7 +73,7 @@ unsigned int find_mean(int *array, int length)
     }
     return sum / length;
 }
-unsigned int find_median(int *array, int length)
+unsigned int find_median(unsigned char *array, int length)
 {
     // First, sort the array
     sort_array(array, length);
@@ -87,7 +87,7 @@ unsigned int find_median(int *array, int length)
     }
 }
 
-void sort_array(int *array, int length)
+void sort_array(unsigned char *array, int length)
 {
     for (int i = 0; i < length - 1; i++) {
         for (int j = 0; j < length - i - 1; j++) {
@@ -99,18 +99,18 @@ void sort_array(int *array, int length)
         }
     }
 }
-void print_statistics(int *array, int length)
+void print_statistics(unsigned char *array, int length)
 {
     printf("Maximum: %d\n", find_maximum(array, length));
     printf("Minimum: %d\n", find_minimum(array, length));
     printf("Mean: %d\n", find_mean(array, length));
     printf("Median: %d\n", find_median(array, length));
 }
-void print_array(int *array, int length)
+void print_array(unsigned char *array, int length)
 {
     printf("Array: ");
     for (int i = 0; i < length; i++) {
-        printf("%d ", array[i]);
+        printf("%d - ", array[i]);
     }
     printf("\n");
 }
