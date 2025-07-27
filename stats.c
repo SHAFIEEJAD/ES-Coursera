@@ -10,9 +10,10 @@
  *****************************************************************************/
 /**
  * @file stats.c 
- * @brief <Add Brief Description Here >
+ * @brief This file contains simple operations on an array of unsigned char values.
  *
- * <Add Extended Description Here>
+ * This file provides functions to compute basic statistics such as mean, median,
+ * maximum, and minimum values, as well as sorting and printing the array.
  *
  * @author MOHAMAD SHAFIEE JADDINI
  * @date 27-07-2025
@@ -38,8 +39,18 @@ void main() {
   /* Other Variable Declarations Go Here */
 
   /* Statistics and Printing Functions Go Here */
+    printf("Original Array:\n");
+    print_array(test, SIZE);
+    printf("\nStatistics:\n");
+    print_statistics(test, SIZE);
+    printf("\nSorted Array:\n");
+    sort_array(test, SIZE);
+    printf("\n");
+    printf("After Sorting:\n");
+    print_array(test, SIZE);
+    printf("Statistics after sorting:\n");
+    print_statistics(test, SIZE);
 
-  print_array(test, SIZE);
 
 }
 

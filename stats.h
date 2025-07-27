@@ -24,16 +24,60 @@
 /* Add Your Declarations and Function Comments here */ 
 
 /**
- * @brief <Add Brief Description of Function Here>
+ * @brief find_maximum
+ * Find the maximum value in an array.
  *
- * <Add Extended Description Here>
+ * @param array Pointer to the array
+ * @param length Length of the array
+ * @return Maximum value in the array
+
+  * @brief find_minimum
+ * Find the minimum value in an array.
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
+ * @param array Pointer to the array
+ * @param length Length of the array
+ * @return Minimum value in the array
+
+
+  * @brief find_mean
+ * Find the mean value in an array.
  *
- * @return <Add Return Informaiton here>
+ * @param array Pointer to the array
+ * @param length Length of the array
+ * @return Mean value in the array
+
+
+  * @brief find_maedian
+ * Find the median value in an array.
+ *
+ * @param array Pointer to the array
+ * @param length Length of the array
+ * @return Median value in the array
+
+
+ * @brief sort_array
+ * Sort an array in descending order.
+ *
+ * @param array Pointer to the array
+ * @param length Length of the array
+ * @return None
+
+
+ * @brief print_statistics
+ * Print the statistics of an array.
+ *
+ * @param array Pointer to the array
+ * @param length Length of the array
+ * @return None
+
+
+ * @brief print_array
+ * Print the elements of an array.
+ *
+ * @param array Pointer to the array
+ * @param length Length of the array
+ * @return None
+
  */
 
 unsigned int find_maximum(unsigned char *array, int length);
