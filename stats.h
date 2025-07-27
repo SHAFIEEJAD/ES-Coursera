@@ -36,5 +36,13 @@
  * @return <Add Return Informaiton here>
  */
 
+unsigned int find_maximum(int *array, int length);
+unsigned int find_minimum(int *array, int length);
+unsigned int find_mean(int *array, int length);
+unsigned int find_median(int *array, int length);
+void sort_array(int *array, int length);
+void print_statistics(int *array, int length);
+void print_array(int *array, int length);
+
 
 #endif /* __STATS_H__ */
